@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo|Oxygen);
+
+body{
+	background-color: rgb(239, 239, 224);
+	padding: 0;
+	margin: 0;	
+}
+
+
+.topBar{
+	position: fixed;
+	top: 0;
+	background-color: white;
+	width: 100%;
+	box-shadow: 0 1px 3px 2px #ccc;
+}
+
+.container{
+	width: 900px;
+	margin: 0 auto;
+}
+
+.container img{
+	width: 200px;
+	margin: 15px 0;
+	float: left;
+}
+
+
+.container ul{
+	list-style: none;
+	float:right;
+}
+
+.container ul li{
+	display: inline-block;
+	font-family: "Oxygen", "san-serif";
+	font-size: .9em;
+	text-transform: uppercase;
+	color: rgb(74, 70, 61);
+	margin: 4px 2px 0;
+	padding: 10px;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-web-kit-border-radius: 5px;
+
+}
+
+.container ul li:hover{
+	background-color: rgb(237, 88, 65);
+	color: white;
+	transition: background-color 0.2s linear 0s;
+}
+
+.center {
+	width: 900px;
+	margin: 142px auto 0;
+}
+
+.star {
+	width: 20px;
+}
+
+span {
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+}
+
+span:before,
+span:after {
+	content: "";
+	height: 1px;
+	width: 250px;
+	margin: 0 15px 10px;
+	background-color: rgb(195, 196, 199);
+	display: inline-block;
+}
+
+h1 {
+	font-family: Arvo;
+	color: rgb(74, 70, 61);
+	text-align: center;
+	margin-top: 50px;
+}
+
+.example-site {
+	width: 275px;
+	float: left;
+	background-color: white;
+	text-align: center;
+	margin: 0 12px;
+}
+
+.example-site:hover {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, .4)
+}
+
+.example-site img {
+	width: 100%;
+}
+
+h2 {
+	font-family: Arvo;
+	color: rgb(237, 88, 55);
+	font-size: 1em;
+	margin: 20px 0;
+}
+
+h3 {
+	font-family: Oxygen;
+	color: rgb(195, 196, 199);
+	font-size: .9em;
+	margin: 20px 0;
+}
+
+hr {
+	width: 50px;
+	height: 1px;
+	border: none;
+	background-color: rgb(195, 196, 199);
+}
+
+button {
+	font-family: Arvo;
+	background-color: rgb(237, 88, 65);
+	padding: 15px 50px;
+	font-size: 1em;
+	color: white;
+	border: none;
+	border-radius: 4px;
+	margin: 60px auto 80px;
+	display: block;
+}
+
+.images:after {
+	content: "";
+	display: table;
+	clear: both;
+}
