@@ -1,0 +1,157 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo|Montserrat);
+
+body {
+  background-color: #EFEFE0;
+  text-align: center;
+}
+
+.center {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.cf:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* === NAV ============================================== */
+
+.navbar {
+  box-shadow: 0 0 5px rgba(0,0,0,.5);
+  background-color: rgba(255,255,255,.9);
+  text-align: left;
+  font-family: Montserrat;
+  padding: 0 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.logo {
+  height: 75px;
+  margin: 25px 0;
+}
+
+.navbar nav {
+  float: right;
+}
+
+.navbar li {
+  list-style: none;
+  float: left;
+  line-height: 125px;
+}
+
+.navbar a {
+  padding: 6px 12px;
+  border-radius: 5px;
+  margin: 0 3px;
+  color: #4A463D;
+  transition: background-color 0.2s;
+}
+
+.navbar a:hover {
+  background-color: #ED5841;
+  color: white;
+}
+
+
+/* === MAIN ============================================= */
+
+
+.star:before,
+.star:after {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 20%;
+  background-color: #C3C4C7;
+}
+.star img {
+  margin: 25px 2%;
+  width: 25px;
+}
+
+.top {
+  padding-top: 150px;
+}
+
+.example-site {
+  background-color: white;
+  transition: all 0.2s;
+}
+
+.example-site:hover {
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, .4)
+}
+
+.button {
+  margin: 50px 0;
+  background-color: #ED5841;
+  font-family: Arvo;
+  border: none;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #f06f5c;
+}
+
+h1 {
+  font-family: Arvo;
+  color: #4A463D;
+  padding: 20px;
+}
+
+h2 {
+  font-family: Arvo;
+  font-size: 1.1em;
+  padding: 20px 0;
+  color: #ED5841;
+}
+
+h3 {
+  font-size: .9em;
+  padding: 20px 0;
+  color: #C3C4C7;
+  font-family: Montserrat;
+}
+
+hr {
+  width: 20%;
+  height: 3px;
+  border: none;
+  background-color: #C3C4C7;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    position: static;
+    padding-bottom: 15px;
+  }
+  .logo {
+    margin: 0 auto;
+    padding: 15px;
+    display: block;
+  }
+  nav {
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  li {
+    width: 100%;
+  }
+  a {
+    display: block;
+    line-height: 2em;
+  }
+  .top {
+    padding-top: 0;
+  }
+
+}
